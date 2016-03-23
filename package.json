@@ -1,0 +1,13 @@
+{
+  "name": "angular-jwt",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "express-jwt": "^3.3.0",
+    "faker": "^3.0.1",
+    "jsonwebtoken": "^5.7.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,16 @@
+<h2>Sign up</h2>
+<form [ngFormModel]="form" (ngSubmit)="onSubmit()" novalidate>
+    <div>
+        <label for="username">Mail</label>
+        <input [ngFormControl]="form.controls['username']" type="text" id="username" #username="ngForm">
+        <span class="validation-error" *ngIf="!username.valid">Not valid</span>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input [ngFormControl]="form.controls['password']" type="password" id="password" #password="ngForm">
+        <span class="validation-error" *ngIf="!password.valid">Not valid</span>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+<h2>You submited</h2>
+<p>Data:{{user|json}}</p>
